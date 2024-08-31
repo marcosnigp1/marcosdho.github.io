@@ -70,9 +70,9 @@ video#bgVideo {
   position: relative;
   overflow: hidden;
   left: -9%;
-  bottom: 8%;
+  bottom: 2%;
   width: 100%;
-  padding-top: 62.5%; /* 4:3 Aspect Ratio  */
+  padding-top: 75%; /* 4:3 Aspect Ratio  */
   box-sizing: content-box;
 }
 
@@ -83,8 +83,8 @@ video#bgVideo {
     left: 6%;
     bottom: 15%;
     right: 27%;
-    width: 64.7%;
-    height: 51.9%;
+    width: 64.4%;
+    height: 42.9%;
 }
 
 /*Second slide */
