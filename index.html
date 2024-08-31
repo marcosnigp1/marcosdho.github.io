@@ -4,49 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Marcos Website</title>
+    <title>Website</title>
 </head>
 <body>
-    <div class="menu">
-        <div class="wrapper">
-            <div id="option-1">
-                <p>The video</p>
-            </div>
-            <div id="option-2">
-                <p>About me</p>
-            </div>
-            <div id="option-3">
-                <p>Inspiration</p>
-            </div>
-            <div id="option-4">
-                <p>Credits</p>
-            </div>
-        </div>
-    </div>
-
+    <div class="menu"></div>
     <div class="container">
-        <div class="wrapper">
-            <div class="wrapper-holder">
-                <div id="slider-1">
-                    <p>video goes here</p>
-                </div>
-                <div id="slider-2">
-                    <p>about me goes here</p>
-                </div>
-                <div id="slider-3">
-                    <p>inspiration goes here</p>
-                </div>
-                <div id="slider-4">
-                    <p>Credits goes here</p>
-                </div>
-            </div>
+
+        <input type="radio" name="contents" id="c1" checked>
+        <input type="radio" name="contents" id="c2" checked>
+        <input type="radio" name="contents" id="c3" checked>
+        <input type="radio" name="contents" id="c4" checked>
+        
+        <div class="section" id="one">
+            <p>This is the main video</p>
+            <label for="c4" class="pre"></label>
+            <label for="c2" class="nxt"></label>
         </div>
 
-        <div class="button-holder">
-            <a href="#slider-1" class="button"></a>
-            <a href="#slider-2" class="button"></a>
-            <a href="#slider-3" class="button"></a>
-            <a href="#slider-4" class="button"></a>
+        <div class="section" id="two">
+            <p>This is the about me page</p>
+            <label for="c1" class="pre"></label>
+            <label for="c3" class="nxt"></label>
+        </div>
+
+        <div class="section" id="three">
+            <p>This is the inspiration</p>
+            <label for="c2" class="pre"></label>
+            <label for="c4" class="nxt"></label>
+        </div>
+        <div class="section" id="four">
+            <p>This is the credits</p>
+            <label for="c3" class="pre"></label>
+            <label for="c1" class="nxt"></label>
+        </div>
+
+        <div class="nav">
+            <label class="dots" id="dot1" for="c1"></label>
+            <label class="dots" id="dot2" for="c2"></label>
+            <label class="dots" id="dot3" for="c3"></label>
+            <label class="dots" id="dot4" for="c4"></label>
         </div>
 
     </div>

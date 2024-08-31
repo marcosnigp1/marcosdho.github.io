@@ -1,122 +1,102 @@
-*{
+/* Made with help from the following video by "Web Decorator": https://www.youtube.com/watch?v=z74ExMz-cWU */ 
+
+html, body{
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0;
-}
-body{
-    background-color: black;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #2c2c2c;
 }
 
-/* The menu */
+/* Slides */
 
-.menu {
+.container{
+    margin: 0 auto;
+    margin-top: 80px;
     position: relative;
+    width: 90%;
+    height: 20%;
+    padding-bottom: 30%;
+    background: #363636;
+    border: solid 1px #ffffff;
 }
 
-.menu .wrapper{
-    width: 50vw;
-    height: 3vw;
-    box-shadow: 10px 10px 20px white;
-    margin: 3rem auto; 
+.section{
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+
+/*Written Content */
+
+#one p{
+    color: white;
+    margin-left: 70px;
+}
+
+#one, #two, #three, #four{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.menu .wrapper .holder{
-    color: red;
-}
-
-.menu #option-1{
-    color: white;
-}
-
-.menu #option-2{
-    color: white;
-}
-
-.menu #option-3{
-    color: white;
-}
-
-.menu #option-4{
-    color: white;
-}
-
-/* The frame */
-
-.container{
-    position: relative;
-}
-
-.container .wrapper{
-    width: 80vw;
-    height: 30vw;
-    box-shadow: 10px 10px 20px white;
-    margin: 5rem auto;
-}
-
-.container .wrapper-holder{
-    display: grid;
-    grid-template-columns: repeat(4, 100%);
-    height: 100%;
-    width: 100%;
-    animation: slider 30s ease-in-out infinite alternate;
-}
-
-
-/* The video */
-.container #slider-1{
-    color: white;
-    text-align: center;
-    margin-top: 2vw;
-    background-position: center;
-}
-
-.container #slider-2{
-    color: white;
-    text-align: center;
-    margin-top: 2vw;
-}
-
-.container #slider-3{
-    color: white;
-    text-align: center;
-    margin-top: 2vw;
-}
-
-.container #slider-4{
-    color: white;
-    text-align: center;
-    margin-top: 2vw;
-}
-
-.container .button-holder .button{
-    background-color: white;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    margin: .3rem; 
-    display: inline-block;
-}
-
-.container .button-holder{
+.pre, .nxt{
+    width: 12%;
+    height:  100%;
     position: absolute;
-    left: 45%;
-    bottom: 0%;
+    top: 0;
+    background: rgba(88,88,88,.4);
+    z-index: 99;
+    cursor: pointer;
 }
 
-@keyframes slider{
-    0%{transform: translateX(0%);}
-    10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(200%);}
-    40%{transform: translateX(200%);}
-    50%{transform: translateX(200%);}
-    60%{transform: translateX(300%);}
-    70%{transform: translateX(300%);}
-    80%{transform: translateX(300%);}
-    90%{transform: translateX(0%);}
-    100%{transform: translateX(0%);}
+.pre{
+    left: 0;
+}
+
+.nxt{
+    right: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.4);
+}
+
+.section{
+    z-index: -1;
+}
+
+#c1, #c2, #c3, #c4{
+    display: none;
+}
+
+/* Hide button from appearing */
+
+#c1:checked ~ #one,
+#c2:checked ~ #two,
+#c3:checked ~ #three,
+#c4:checked ~ #four{
+    z-index: 9;
+}
+
+#c1:checked ~ .nav #dot1,
+#c2:checked ~ .nav #dot2,
+#c3:checked ~ .nav #dot3,
+#c4:checked ~ .nav #dot4{
+    background: #fff;
 }
