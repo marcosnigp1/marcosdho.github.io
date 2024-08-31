@@ -5,6 +5,7 @@ html, body{
     height: 100%;
     margin: 0;
     background-color: #2c2c2c;
+    overflow: hidden;
 }
 
 /* Slides */
@@ -29,10 +30,58 @@ html, body{
 
 /*Written Content */
 
+/*First slide */
+
 #one p{
+    color: white;
+    position: relative;
+    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+    bottom: 40%;
+    left: 50%;
+    text-align: center;
+    font-size: 27px;
+    width: 30%;
+    float: left;
+    clear: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.videocontainer{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%; /* 4:3 Aspect Ratio  */
+  box-sizing: content-box;
+}
+
+.responsive-iframe{
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    bottom: 15%;
+    right: 25%;
+    width: 49.7%;
+    height: 46%;
+}
+
+/*Second slide */
+
+#two p{
+    color: white;
+    margin-left: 20px;
+}
+
+#three p{
     color: white;
     margin-left: 70px;
 }
+
+#four p{
+    color: white;
+    margin-left: 70px;
+}
+
+/*End of written content */
 
 #one, #two, #three, #four{
     display: flex;
@@ -67,7 +116,7 @@ html, body{
 }
 
 .dots{
-    top: -5px;
+    top: 40px;
     width: 18px;
     height: 18px;
     margin: 0 4px;
