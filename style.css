@@ -1,12 +1,28 @@
 /* Made with help from the following video by "Web Decorator": https://www.youtube.com/watch?v=z74ExMz-cWU */ 
+/* Code for video in background by duhzecca. Found in: https://stackoverflow.com/questions/24293102/how-to-put-a-background-video-loop-on-a-website-html-css */
+
 
 html, body{
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: #2c2c2c;
+    background-color: #74651052;
     overflow: hidden;
 }
+
+
+video#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: -100;    
+    background-size: cover;
+}
+
 
 /* Slides */
 
@@ -17,7 +33,7 @@ html, body{
     width: 90%;
     height: 20%;
     padding-bottom: 30%;
-    background: #363636;
+    background: #1f1d1d;
     border: solid 1px #ffffff;
 }
 
@@ -32,11 +48,47 @@ html, body{
 
 /*First slide */
 
-#one p{
+#one h1{
     color: white;
     position: relative;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: 40%;
+    bottom: 42%;
+    left: 50%;
+    text-align: center;
+    font-size: 27px;
+    width: 50%;
+    float: left;
+    clear: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.videocontainer{
+  position: relative;
+  overflow: hidden;
+  left: -9%;
+  bottom: 8%;
+  width: 100%;
+  padding-top: 62.5%; /* 4:3 Aspect Ratio  */
+  box-sizing: content-box;
+}
+
+.responsive-iframe{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    bottom: 15%;
+    right: 27%;
+    width: 64.7%;
+    height: 51.9%;
+}
+
+/*Second slide */
+
+#two h1{
+    color: white;
+    position: relative;
+    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+    bottom: 42%;
     left: 50%;
     text-align: center;
     font-size: 27px;
@@ -46,35 +98,73 @@ html, body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.videocontainer{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 75%; /* 4:3 Aspect Ratio  */
-  box-sizing: content-box;
-}
-
-.responsive-iframe{
-    position: absolute;
-    top: 27%;
-    left: 10%;
-    bottom: 15%;
-    right: 25%;
-    width: 49.7%;
-    height: 46%;
-}
-
-/*Second slide */
-
 #two p{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    margin-left: 20px;
+    text-align: left;
+    bottom: 12%;
+    width: 40%;
+    left:-20%;
+    float: right;
+    clear: right;
+}
+
+#two img{
+    position: absolute;
+    float: left;
+    clear: left;
+    top: 18%;
+    right: 15%;
+    width: 25%;
+}
+
+/*Third slide */
+
+#three h1{
+    color: white;
+    position: relative;
+    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+    bottom: 42%;
+    left: 50%;
+    text-align: center;
+    font-size: 27px;
+    width: 30%;
+    float: left;
+    clear: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #three p{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    margin-left: 70px;
+    text-align: left;
+    bottom: 12%;
+    width: 40%;
+    left:-20%;
+    float: right;
+    clear: right;
 }
+
+#three img{
+    position: absolute;
+    float: left;
+    clear: left;
+    top: 18%;
+    right: 12%;
+    width: 25%;
+}
+
+#threehardcoregif img{
+    position: absolute;
+    float: left;
+    clear: left;
+    top: 50%;
+    left: 55%;
+    width: 30%;
+}
+
 
 #four p{
     color: white;
@@ -89,13 +179,23 @@ html, body{
 }
 
 .pre, .nxt{
-    width: 12%;
+    width: 10cap;
     height:  100%;
     position: absolute;
     top: 0;
-    background: rgba(88,88,88,.4);
+    background: rgba(88, 88, 88, 0.473);
     z-index: 99;
     cursor: pointer;
+}
+
+/* Fade in-out Animation */
+
+@keyframes fadeIn {  /*Source: https://blog.hubspot.com/website/css-fade-in */
+    0% { opacity: 0; }
+    25% { opacity: 0.25; }
+    50% { opacity: 0.50; }
+    75% { opacity: 0.75; }
+    100% { opacity: 1; }
 }
 
 .pre{
@@ -116,7 +216,7 @@ html, body{
 }
 
 .dots{
-    top: 40px;
+    top: 50px;
     width: 18px;
     height: 18px;
     margin: 0 4px;
@@ -130,16 +230,18 @@ html, body{
     z-index: -1;
 }
 
+/* Hide button from appearing */
+
 #c1, #c2, #c3, #c4{
     display: none;
 }
 
-/* Hide button from appearing */
-
-#c1:checked ~ #one,
+#c1:checked ~ #one,  /* On clicked, this triggers the animation */
 #c2:checked ~ #two,
 #c3:checked ~ #three,
 #c4:checked ~ #four{
+    animation-name: fadeIn;
+    animation-duration: 0.25s;
     z-index: 9;
 }
 
@@ -149,3 +251,81 @@ html, body{
 #c4:checked ~ .nav #dot4{
     background: #fff;
 }
+
+
+/* Example from w3schools.com */
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (min-width: 470px) {
+   #two p, #three p, #four p{
+      font-size: 11px;
+    }
+
+    #one h1{
+        font-size: 20px;
+    } 
+
+    #two h1, #three h1, #four h1{
+        font-size: 30px;
+      }
+  }
+
+
+@media screen and (min-width: 670px) {
+    #two p, #three p, #four p{
+      font-size: 14px;
+    }
+
+    #one h1{
+        font-size: 20px; 
+    }
+
+    #two h1, #three h1, #four h1{
+        font-size: 35px;
+      }
+  }
+
+@media screen and (min-width: 900px) {
+    #two p, #three p, #four p{
+      font-size: 15px;
+    }
+    
+    #one h1{
+        font-size: 25px;
+    }
+
+    #two h1, #three h1, #four h1{
+        font-size: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    #two p, #three p, #four p {
+      font-size: 18px;
+    }
+
+    #one h1{
+        font-size: 30px;
+    } 
+
+  }
+
+  @media screen and (min-width: 1400px) {
+    #two p, #three p, #four p {
+      font-size: 20px;
+    }
+
+    #one h1{
+        font-size: 40px;
+    } 
+  }
+
+  @media screen and (min-width: 1900px) {
+    #two p, #three p, #four p {
+      font-size: 23px;
+    }
+
+    #one h1{
+        font-size: 40px;
+    } 
+  }

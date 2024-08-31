@@ -7,16 +7,20 @@
     <title>Website</title>
 </head>
 <body>
+
+    <video id="bgVideo" controls preload="true" autoplay loop muted>  <!-- Code by Rachel Gallen. Found in: https://stackoverflow.com/questions/24293102/how-to-put-a-background-video-loop-on-a-website-html-css--> 
+        <source src="files/palms.mp4" type="video/mp4" /> 
+    </video>
+
     <div class="menu"></div>
     <div class="container">
-
         <input type="radio" name="contents" id="c1" checked>
         <input type="radio" name="contents" id="c2" checked>
         <input type="radio" name="contents" id="c3" checked>
         <input type="radio" name="contents" id="c4" checked>
         
-        <div class="section" id="one">
-            <p>The August 27th Incident</p>
+        <div class="section" id="one"> 
+            <h1>The August 27th Incident</h1>
             <div class="videocontainer" id="one">
                 <iframe frameborder="0"  class="responsive-iframe" src="https://www.youtube.com/embed/gtl1S0kUMEw?si=_modIQyAsnokIGV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -25,13 +29,30 @@
         </div>
 
         <div class="section" id="two">
-            <p>This is the about me page</p>
+            <h1>About me</h1>
+            <p>I am Marcos David Hernández Ortigoza. An Interactive Media student who loves to program and experiment with technology. 
+                From an early age, I found a fascination at computers due to the endless possibilities of things you can do. One of the possibilities is
+                video creation and editing, as seen in the product "The August 27th Incident".</p>
+            <div class="pf" id="two">
+                <img src="files\pf.png" alt="Picture of me">
+            </div>
             <label for="c1" class="pre"></label>
             <label for="c3" class="nxt"></label>
         </div>
 
         <div class="section" id="three">
-            <p>This is the inspiration</p>
+            <h1>Inspiration</h1>
+            <p>One of my favorite action films is called "Hardcore Henry". Directed by Ilya Naishuller and released in 2015, this movie experimented with a 
+                First Person point of view, like those seen in video games. Obviously, I do not have the expensive equipment to produce a high quality movie, but I thought:
+            "Hey! Maybe I can do something similar with my phone camera."</p>
+            <div class="posterhr" id="three">
+                <img src="files\henry.webp" alt="Poster of Hardcore Henry">
+            </div>
+
+            <div class="gifhr" id="threehardcoregif">
+                <img src="files\HARDCOREHENRY.GIF" alt="gif of Hardcore Henry">
+            </div>
+
             <label for="c2" class="pre"></label>
             <label for="c4" class="nxt"></label>
         </div>
