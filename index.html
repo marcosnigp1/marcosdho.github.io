@@ -4,89 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <title>The August 27th Incident</title>
 </head>
+
+
 <body>
 
-    <video id="bgVideo" controls preload="true" autoplay loop muted>  <!-- Code by Rachel Gallen. Found in: https://stackoverflow.com/questions/24293102/how-to-put-a-background-video-loop-on-a-website-html-css--> 
-        <source src="files/palms.mp4" type="video/mp4" /> 
-    </video>
 
     <div class="menu"></div>
-    <div class="container">
-        <input type="radio" name="contents" id="c2" checked>
-        <input type="radio" name="contents" id="c3" checked>
-        <input type="radio" name="contents" id="c4" checked>
-        <input type="radio" name="contents" id="c1" checked>
-        
-        <div class="section" id="one"> 
-            <h1>The August 27th Incident</h1>
-            <div class="videocontainer" id="one">
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/I7ofVepzqgE?si=RTZle_qaPen6DX1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <label for="c4" class="pre"></label>
-            <label for="c2" class="nxt"></label>
+
+    <!-- section_1: Video and Menu
+         section_2: About Me
+         section_3: Image Carousel 
+            section: Specific class for the image carousel.
+         section_4: Inspiration.
+         section_5: Credits.
+    -->
+
+    <div class="section_1">
+        <h1>The August 27th Incident</h1>
+        <div class="videocontainer">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/I7ofVepzqgE?si=RTZle_qaPen6DX1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
-        <div class="section" id="two">
-            <h1>About me</h1>
-            <p>I am Marcos David Hernández Ortigoza. An Interactive Media student who loves to program and experiment with technology. 
-                From an early age, I found a fascination at computers due to the endless possibilities of things you can do. One of the possibilities is
-                video creation and editing, as seen in the product "The August 27th Incident".</p>
-            <div class="pf" id="two">
-                <img src="files\pf.png" alt="Picture of me">
-            </div>
-            <label for="c1" class="pre"></label>
-            <label for="c3" class="nxt"></label>
-        </div>
-
-        <div class="section" id="three">
-            <h1>Inspiration</h1>
-            <p>One of my favorite action films is called "Hardcore Henry". Directed by Ilya Naishuller and released in 2015, this movie experimented with a 
-                First Person point of view, like those seen in video games. Obviously, I do not have the expensive equipment to produce a high quality movie, but I thought:
-            "Hey! Maybe I can do something similar with my phone camera."</p>
-            <div class="posterhr" id="three">
-                <img src="files\henry.webp" alt="Poster of Hardcore Henry">
-            </div>
-
-            <div class="gifhr" id="threehardcoregif">
-                <img src="files\HARDCOREHENRY.GIF" alt="GIF of Hardcore Henry">
-            </div>
-
-            <label for="c2" class="pre"></label>
-            <label for="c4" class="nxt"></label>
-        </div>
-        <div class="section" id="four">
-            <h1>Social Media & Credits</h1>
-            <div class="instagram" id="instagram_icon">
-                <a href="https://www.instagram.com/marcos_dho/" target="_blank">
-                <!-- <p>My Instagram Profile</p> -->
-                <img src="files\instagram_banner.jpg" alt="Icon of Instagram"></a>
-            </div>
-            <div class="github" id="github_icon">
-                <a href="https://github.com/marcosnigp1" target="_blank">
-                <!-- <p>My Github Profile</p> -->
-                <img src="files\github_banner.png" alt="Icon of Instagram"></a>
-            </div>
-            <div class="YouTube" id="youtube_icon">
-                <a href="https://www.youtube.com/@marcosni_gp1" target="_blank">
-                <!-- <p>My YouTube Profile</p> -->
-                <img src="files\youtube_banner.png" alt="Icon of YouTube"></a>
-            </div>
-            <div class="credits">
-                <p>Video in the background by Christopher Seufert on Youtube.</p>
-            </div>
-            <label for="c3" class="pre"></label>
-            <label for="c1" class="nxt"></label>
-        </div>
-
-        <div class="nav">
-            <label class="dots" id="dot1" for="c1"></label>
-            <label class="dots" id="dot2" for="c2"></label>
-            <label class="dots" id="dot3" for="c3"></label>
-            <label class="dots" id="dot4" for="c4"></label>
-        </div>
-
     </div>
+
+    <div class="section_2">
+        <h1>About me</h1>
+        <p>I am Marcos David Hernández Ortigoza. An Interactive Media student who loves to program and experiment with technology. 
+            From an early age, I found a fascination at computers due to the endless possibilities of things you can do. One of the possibilities is
+            video creation and editing, as seen in the product "The August 27th Incident".</p>
+        <div class="pf" id="two">
+            <img src="media\pf.png" alt="Picture of me">
+        </div>
+    </div>
+
+    <div class="section_3">
+
+        <div class="container">
+        
+            <video id="bgVideo" controls preload="true" autoplay loop muted>  <!-- Code by Rachel Gallen. Found in: https://stackoverflow.com/questions/24293102/how-to-put-a-background-video-loop-on-a-website-html-css--> 
+                <source src="media/palms.mp4" type="video/mp4" /> 
+            </video>
+    
+            <input type="radio" name="contents" id="c2" checked>
+            <input type="radio" name="contents" id="c3" checked>
+            <input type="radio" name="contents" id="c4" checked>
+            <input type="radio" name="contents" id="c1" checked>
+            
+            <div class="section" id="one"> 
+    
+                <label for="c4" class="pre"></label>
+                <label for="c2" class="nxt"></label>
+            </div>
+    
+            <div class="section" id="two">
+    
+                <label for="c1" class="pre"></label>
+                <label for="c3" class="nxt"></label>
+            </div>
+    
+            <div class="section" id="three">
+    
+                <label for="c2" class="pre"></label>
+                <label for="c4" class="nxt"></label>
+            </div>
+    
+            <div class="section" id="four">
+       
+                <label for="c3" class="pre"></label>
+                <label for="c1" class="nxt"></label>
+            </div>
+    
+            <div class="nav">
+                <label class="dots" id="dot1" for="c1"></label>
+                <label class="dots" id="dot2" for="c2"></label>
+                <label class="dots" id="dot3" for="c3"></label>
+                <label class="dots" id="dot4" for="c4"></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_4">
+        <h1>Inspiration</h1>
+        <p>One of my favorite action films is called "Hardcore Henry". Directed by Ilya Naishuller and released in 2015, this movie experimented with a 
+            First Person point of view, like those seen in video games. Obviously, I do not have the expensive equipment to produce a high quality movie, but I thought:
+        "Hey! Maybe I can do something similar with my phone camera."</p>
+        <div class="posterhr" id="three">
+            <img src="media\henry.webp" alt="Poster of Hardcore Henry">
+        </div>
+
+        <div class="gifhr" id="threehardcoregif">
+            <img src="media\HARDCOREHENRY.GIF" alt="GIF of Hardcore Henry">
+        </div>
+    </div>
+
+    <div class="section_5">
+        <h1>Social Media & Credits</h1>
+        <div class="instagram" id="instagram_icon">
+            <a href="https://www.instagram.com/marcos_dho/" target="_blank">
+            <!-- <p>My Instagram Profile</p> -->
+            <img src="media\instagram_banner.jpg" alt="Icon of Instagram"></a>
+        </div>
+        <div class="github" id="github_icon">
+            <a href="https://github.com/marcosnigp1" target="_blank">
+            <!-- <p>My Github Profile</p> -->
+            <img src="media\github_banner.png" alt="Icon of Instagram"></a>
+        </div>
+        <div class="YouTube" id="youtube_icon">
+            <a href="https://www.youtube.com/@marcosni_gp1" target="_blank">
+            <!-- <p>My YouTube Profile</p> -->
+            <img src="media\youtube_banner.png" alt="Icon of YouTube"></a>
+        </div>
+        <div class="credits">
+            <p>Video in the background by Christopher Seufert on Youtube.</p>
+        </div>
+    </div>
+
+
 </body>
 </html>
