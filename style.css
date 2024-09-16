@@ -21,17 +21,17 @@ html, body{
 
 }
 
-
 /*------------- Sections ----------- */
 
 
 /* Section 1: The video and menu */
 
 .section_1{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.384);
+    
 }
 
-#one h1{
+.section_1 h1{
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.199);
     font-weight:bold;
@@ -41,136 +41,10 @@ html, body{
     bottom: 42%;
     left: 50%;
     text-align: center;
-    font-size: 27px;
+    font-size: 35px;
     width: 50%;
     float: left;
     clear: left;
-}
-
-.videocontainer{
-  position: relative;
-  overflow: hidden;
-  left: -9%;
-  bottom: 2%;
-  width: 100%;
-  padding-top: 75%; /* 4:3 Aspect Ratio  */
-  box-sizing: content-box;
-}
-
-.responsive-iframe{
-    border-radius: 25px;
-    position: absolute;
-    top: 30%;
-    left: 6%;
-    bottom: 15%;
-    right: 27%;
-    width: 64.4%;
-    height: 42.9%;
-}
-
-
-/* END OF SECTION 1 */
-
-
-
-/* Section 2: About me */
-
-.section_2{
-    background-color: black;
-}
-
-#two h1{
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.199);
-    color: white;
-    position: relative;
-    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: 42%;
-    left: 50%;
-    text-align: center;
-    font-size: 27px;
-    width: 30%;
-    float: left;
-    clear: left;
-}
-
-#two p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.274);
-    position: relative;
-    color: white;
-    text-align: left;
-    bottom: 5%;
-    width: 40%;
-    left:-20%;
-    float: right;
-    clear: right;
-}
-
-#two img{
-    border-radius: 10px;
-    position: absolute;
-    float: left;
-    clear: left;
-    top: 18%;
-    right: 15%;
-    width: 25%;
-}
-
-
-/* END OF SECTION 2 */
-
-
-/* Section 3: Image carousel */
-
-.section_3{
-    background-color: black;
-}
-
-.container{
-    border-radius: 30px;
-    margin: 0 auto;
-    margin-top: 80px;
-    position: relative;
-    width: 90%;
-    height: 20%;
-    padding-bottom: 30%;
-    /* background: rgb(38, 41, 41); */
-    /* border: solid 1px #ffffff; */
-}
-
-.section{
-    position: absolute;
-    width: 100%;
-    height: 100%
-}
-
-#three h1{
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.199);
-    color: white;
-    position: relative;
-    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: 42%;
-    left: 50%;
-    text-align: center;
-    font-size: 27px;
-    width: 30%;
-    float: left;
-    clear: left;
-}
-
-#three p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.274);
-    position: relative;
-    color: white;
-    text-align: left;
-    bottom: 5%;
-    width: 40%;
-    left:-20%;
-    float: right;
-    clear: right;
 }
 
 video#bgVideo {   /* FIND A WAY TO MAKE THIS ONLY THE BACKGROUND OF THE CARROUSEL. */ 
@@ -182,138 +56,297 @@ video#bgVideo {   /* FIND A WAY TO MAKE THIS ONLY THE BACKGROUND OF THE CARROUSE
     height: auto;
     min-height: 100%;
     z-index: -100;    
-    background-size: cover;
+    /* background-size: cover; */
+    overflow: hidden;
 }
 
+.videocontainer{
+  position: relative;
+  overflow: hidden;
+  left: -9%;
+  bottom: 2%;
+  width: 100%;
+  height: 0%;
+  padding-top: 75%; /* 4:3 Aspect Ratio  */
+  box-sizing: content-box;
+  max-height: 400px;
+}
+
+.responsive-iframe{
+    border-radius: 25px;
+    position: absolute;
+    top: 1cap;
+    left: 25%;
+    bottom: 35%;
+    right: 27%;
+    width:66.4%;
+    height: 82.9%;
+}
+
+
+/* END OF SECTION 1 */
+
+
+
+/* Section 2: About me */
+
+.section_2{
+    background-color: rgb(124, 78, 78);
+    height: 600px;
+}
+
+.section_2 h1{
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgba(73, 69, 69, 0.199);
+    color: white;
+    position: relative;
+    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+    bottom: -5%;
+    left: 50%;
+    text-align: center;
+    font-size: 27px;
+    width: 30%;
+    float: left;
+    clear: left;
+}
+
+.section_2 p{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.274);
+    position: relative;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    bottom: -15%;
+    width: 40%;
+    left:-50%;
+    float: right;
+    clear: right;
+}
+
+.section_2 img{
+    border-radius: 10px;
+    position: relative;
+    top: 160px;
+    left: 100%;
+    width: 90%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* END OF SECTION 2 */
+
+
+/* Section 3: Image carousel */
+
+.section_3{
+    background-color: rgb(90, 47, 47);
+    height: 1000px;
+}
+
+.section_3 h1{
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgba(73, 69, 69, 0.199);
+    color: white;
+    position: relative;
+    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+    bottom: -5%;
+    left: 50%;
+    text-align: center;
+    font-size: 27px;
+    width: 30%;
+    float: left;
+    clear: left;
+}
+
+
+.container{
+    top: 15%;
+    border-radius: 30px;
+    margin: 0 auto;
+    position: relative;
+    max-height: 600px;
+    max-width: 1200px;
+    width: 80%;
+    height: 20%;
+    padding-bottom: 30%;
+    background-color: red;
+    /* background: rgb(38, 41, 41); */
+    /* border: solid 1px #ffffff; */
+}
+
+.section{
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
 
 /* END OF SECTION 3 */
 
 
-#three img{
-    border-radius: 15px;
-    position: absolute;
-    float: left;
-    clear: left;
-    top: 18%;
-    right: 12%;
-    width: 25%;
+/* Section 4: Inspiration */
+
+.section_4{
+    background-color: rgb(47, 90, 77);
+    height: 1000px;
 }
 
-#threehardcoregif img{
-    position: absolute;
+.section_4 h1{
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgba(73, 69, 69, 0.199);
+    color: white;
+    position: relative;
+    transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+    bottom: -5%;
+    left: 50%;
+    text-align: center;
+    font-size: 27px;
+    width: 30%;
     float: left;
     clear: left;
-    top: 50%;
-    left: 55%;
+}
+
+.section_4 p{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.274);
+    position: relative;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    bottom: -15%;
+    width: 40%;
+    left:-50%;
+    float: right;
+    clear: right;
+}
+
+#hardcoreimg img{
+    border-radius: 15px;
+    position: relative;
+    top: 200px;
+    right: 0%;
+    left: 35%;
+    bottom: 25%;
     width: 30%;
 }
 
+#threehardcoregif img{
+    border-radius: 15px;
+    position: relative;
+    top: 150px;
+    left: 53%;
+    width: 40%;
+    max-width: 600px;
+}
 
-/* END OF SECTION 3 */
+
+/* END OF SECTION 4 */
 
 
 
 
 /* Section 5: Credits */ 
 
-#five h1{
+.section_5{
+    background-color: rgb(138, 204, 52);
+    height: 1200px;
+    overflow: hidden; /* Helps in hiding the borders that are left by the video and the transition to the other slide. */
+}
+
+.section_5 h1{
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.199);
     color: white;
     position: relative;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: 42%;
+    bottom: -5%;
     left: 50%;
     text-align: center;
-    width: 30%;
-    float: left;
-    clear: left;
+    width: 60%;
 }
 
-#five p{
+.credits{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.274);
-    position: absolute;
+    position: relative;
     color: white;
-    text-align: center;
-    width: 60%;
-    bottom: 7%;
-    left: 19%;
-    float: right;
-    clear: right;
+    text-align:left;
+    width: 50%;
+    top: 900px;
+    left: 24%;
 }
 
 #instagram_icon img{
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.274);
-    position: absolute;
-    float: left;
-    clear: left;
-    top: 15%;
-    left: 64%;
+    position: relative;
+    float: right;
+    top: 125px;
+    right: 15%;
     width: 15%;
 }
 
 #instagram_icon p{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.274);
-    position: absolute;
+    position: relative;
     color: white;
     text-align: center;
     width: 28%;
-    bottom: 26%;
-    left: 54%;
-    float: right;
-    clear: right;
+    top: 750px;
+    left: 63%;
 }
 
 #youtube_icon img{
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.274);
-    position: absolute;
+    position: relative;
     float: left;
-    clear: left;
-    top: 15%;
-    left: 20%;
+    top: 54px;
+    left: 15%;
     width: 15%;
 }
 
 #youtube_icon p{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.274);
-    position: absolute;
+    position: relative;
     color: white;
     text-align: center;
     width: 28%;
-    bottom: 26%;
-    left: 19%;
-    float: right;
-    clear: right;
+    top: 678px;
+    left: 8%;
 }
+
 
 #github_icon img{
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.274);
-    position: absolute;
-    float: left;
-    clear: left;
-    top: 15%;
-    left: 42%;
+    position: relative;
+    float:right;
+    top: 90px;
+    right: 27%;
     width: 15%;
 }
 
 #github_icon p{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.274);
-    position: absolute;
+    position: relative;
     color: white;
     text-align: center;
     width: 28%;
-    bottom: 26%;
-    left: 19%;
-    float: right;
-    clear: right;
+    top: 714px;
+    left: 35%;
 }
+
+/* END OF SECTION 5 */
+
 
 
 /*End of written content */
@@ -333,6 +366,8 @@ video#bgVideo {   /* FIND A WAY TO MAKE THIS ONLY THE BACKGROUND OF THE CARROUSE
     z-index: 100;
     cursor: pointer;
 }
+
+
 
 /* Fade in-out Animation */
 
@@ -399,10 +434,20 @@ video#bgVideo {   /* FIND A WAY TO MAKE THIS ONLY THE BACKGROUND OF THE CARROUSE
 }
 
 
+
+
+
+
+
+
 /* Example from w3schools.com */
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 
-@media screen and (min-width: 470px) {
+
+
+/* !!!!!!!!!!!!!!!! Erase all of this later. !!!!!!!!!!!!!!!! */
+
+/* @media screen and (min-width: 470px) {
    #two p, #three p, #four p{
       font-size: 11px;
     }
@@ -501,4 +546,4 @@ video#bgVideo {   /* FIND A WAY TO MAKE THIS ONLY THE BACKGROUND OF THE CARROUSE
     #four h1{
         font-size: 35px;
     }
-  }
+  } */
