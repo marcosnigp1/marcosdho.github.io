@@ -25,7 +25,6 @@ html, body{
     
     /* Found on: https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html */
     scroll-behavior: smooth;
-
 }
 
 
@@ -150,11 +149,16 @@ html, body{
 .section_1 p{
     position: absolute;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: -70px;
+    bottom: 65%;
     left: 50%;
+    background-color: rgba(0, 0, 0, 0.336);
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    top: 17%;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    width: 60%;
+    float: left;
+    clear: left;
 }
 
 video#bgVideo { 
@@ -472,7 +476,7 @@ video#bgVideo {
 
 .section_5{
     background-color: rgb(238, 238, 238);
-    height: 1000px;
+    height: 500px;
     overflow: hidden; /* Helps in hiding the borders that are left by the video and the transition to the other slide. */
 }
 
@@ -494,9 +498,9 @@ video#bgVideo {
     position: relative;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
     bottom: -70%;
-    left: 50%;
+    left: 100%;
     text-align: center;
-    width: 86%;
+    width: 120%;
     font-size: 20px;
 }
 
@@ -504,21 +508,24 @@ video#bgVideo {
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.274);
     position: relative;
-    float: right;
-    top: 125px;
-    right: 15%;
-    width: 15%;
+    max-width: 50px;
+    float: left;
+    clear:right;
+    top: 160px;
+    left: 35%;
+    width: 5%;
 }
 
 #instagram_icon p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(179, 214, 83, 0.363);
     position: relative;
     color: black;
     text-align: center;
-    width: 28%;
-    top: 750px;
-    left: 63%;
+    width: 32%;
+    top: 225px;
+    left: -11%;
+    float: right;
 }
 
 #youtube_icon img{
@@ -526,20 +533,22 @@ video#bgVideo {
     background-color: rgba(0, 0, 0, 0.274);
     position: relative;
     float: left;
-    top: 54px;
-    left: 15%;
-    width: 15%;
+    max-width: 50px;
+    top: 60px;
+    left: 25%;
+    width: 5%;
 }
 
 #youtube_icon p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(179, 214, 83, 0.363);
     position: relative;
     color: black;
     text-align: center;
-    width: 28%;
-    top: 678px;
-    left: 8%;
+    width: 29%;
+    top: 60px;
+    left: 13%;
+    float: right;
 }
 
 
@@ -547,21 +556,23 @@ video#bgVideo {
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.274);
     position: relative;
-    float:right;
-    top: 90px;
-    right: 27%;
-    width: 15%;
+    float:left;
+    top: -40px;
+    left: 30%;
+    max-width: 50px;
+    width: 5%;
 }
 
 #github_icon p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(179, 214, 83, 0.363);
     position: relative;
     color: black;
     text-align: center;
     width: 28%;
-    top: 714px;
-    left: 36.5%;
+    top: -36px;
+    left: -17%;
+    float: right;
 }
 
 /* END OF SECTION 5 */
