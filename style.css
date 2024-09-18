@@ -497,8 +497,8 @@ video#bgVideo {
     color: black;
     position: relative;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: -70%;
-    left: 100%;
+    bottom: -75%;
+    left: 76%;
     text-align: center;
     width: 120%;
     font-size: 20px;
@@ -518,9 +518,9 @@ video#bgVideo {
 
 #instagram_icon p{
     border-radius: 5px;
-    background-color: rgba(179, 214, 83, 0.363);
+    background-color: rgba(0, 0, 0, 0.671);
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     width: 32%;
     top: 225px;
@@ -541,9 +541,9 @@ video#bgVideo {
 
 #youtube_icon p{
     border-radius: 5px;
-    background-color: rgba(179, 214, 83, 0.363);
+    background-color: rgba(0, 0, 0, 0.671);
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     width: 29%;
     top: 60px;
@@ -565,11 +565,11 @@ video#bgVideo {
 
 #github_icon p{
     border-radius: 5px;
-    background-color: rgba(179, 214, 83, 0.363);
+    background-color: rgba(0, 0, 0, 0.671); 
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
-    width: 28%;
+    width: 27%;
     top: -36px;
     left: -17%;
     float: right;
@@ -580,3 +580,18 @@ video#bgVideo {
 
 
 /*End of written content */
+
+@media only screen and (max-width: 915px) {
+
+    .menu h3{
+        display:none;
+    }
+
+    .menu #menu_option{
+        font-size: 9px;
+    }
+
+    .section_1 p{
+      font-size: 5px;
+    }
+  }
