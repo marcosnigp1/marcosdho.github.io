@@ -9,15 +9,26 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <title>The August 27th Incident</title>
+    <link rel="icon" type="image/x-icon" href="media/icon.png"> <!-- Image extracted from the following source: https://www.flaticon.com/free-icon/palm-tree_4983385?related_id=4976097&origin=search -->
+                                                                <!-- Also, I got this code from w3schools: https://www.w3schools.com/html/html_favicon.asp -->
 </head>
 
-
+<!-- Skeleton -->
 <body>
     
-    <div class="menu"></div>
+    <div class="menu">
+        <h3>The August 27th Incident</h3>
+        
+        <button id="menu_option" onclick="location.href='#credits'" type="button">Social media and credits</button>
+        <button id="menu_option" onclick="location.href='#inspiration'" type="button">Inspiration</button>
+        <button id="menu_option" onclick="location.href='#images'" type="button">Images</button>
+        <button id="menu_option" onclick="location.href='#aboutme'" type="button">About me</button>
+        <button id="menu_option" onclick="location.href='#video'" type="button">The video</button>
+        
+    </div>
 
     <!-- section_1: Video and Menu
          section_2: About Me
@@ -27,7 +38,7 @@
          section_5: Credits.
     -->
 
-    <div class="section_1">
+    <div class="section_1" id="video">
         <h1>The August 27th Incident</h1>
         <p>by Marcos Hernández</p>
         <div class="videocontainer">
@@ -38,13 +49,16 @@
         </video>
     </div>
 
-    <div class="section_2">
+    <div class="section_2" id="aboutme">
         <h1>About me</h1>
         <p>I am Marcos David Hernández Ortigoza. An Interactive Media student who loves to program and experiment with technology. 
             From an early age, I found a fascination at computers due to the endless possibilities of things you can do. One of the possibilities is
             video creation and editing, as seen in the product "The August 27th Incident".</p>
-        <div class="pf" id="two">
-            <img src="media\pf.png" alt="Picture of me">
+        <div class="photos" id="two">
+            <img src="media\pf.png" id="me" alt="Picture of me">
+            <img src="media\palms.jpg" id="palms" alt="Picture of palms"> 
+        </div>
+            
         </div>
     </div>
     
@@ -53,10 +67,10 @@
     <div id="window_right"></div>
     <div id="white_bg"></div>
 
-    <div class="section_3">
+    <div class="section_3" id="images">
         <h1>Images</h1>
 
-        <div class="container">
+        <div class="container" id="the_container">
     
             <input type="radio" name="contents" id="c2" checked>
             <input type="radio" name="contents" id="c3" checked>
@@ -64,35 +78,27 @@
             <input type="radio" name="contents" id="c1" checked>
             
             <div class="section" id="one"> 
-                
-
-
-                <label for="c4" class="pre"></label>
-                <label for="c2" class="nxt"></label>
+                <img src="media/carrousel_images/1.png" alt="">
+                <label for="c4" class="pre"> <br> <br> <br> <br> < </label>
+                <label for="c2" class="nxt"> <br> <br> <br> <br> > </label>
             </div>
     
             <div class="section" id="two">
-    
-
-
-                <label for="c1" class="pre"></label>
-                <label for="c3" class="nxt"></label>
+                <img src="media/carrousel_images/2.png" alt="">
+                <label for="c1" class="pre"> <br> <br> <br> <br> < </label>
+                <label for="c3" class="nxt"> <br> <br> <br> <br> > </label>
             </div>
     
             <div class="section" id="three">
-    
-
-
-                <label for="c2" class="pre"></label>
-                <label for="c4" class="nxt"></label>
+                <img src="media/carrousel_images/3.png" alt="">
+                <label for="c2" class="pre"> <br> <br> <br> <br> < </label>
+                <label for="c4" class="nxt"> <br> <br> <br> <br> > </label>
             </div>
     
             <div class="section" id="four">
-       
-
-
-                <label for="c3" class="pre"></label>
-                <label for="c1" class="nxt"></label>
+                <img src="media/carrousel_images/4.png" alt="">
+                <label for="c3" class="pre"> <br> <br> <br> <br> < </label>
+                <label for="c1" class="nxt"> <br> <br> <br> <br> > </label>
             </div>
     
             <div class="nav">
@@ -104,7 +110,7 @@
         </div>
     </div>
 
-    <div class="section_4">
+    <div class="section_4" id="inspiration">
         <h1>Inspiration</h1>
         <p>One of my favorite action films is called "Hardcore Henry". Directed by Ilya Naishuller and released in 2015, this movie experimented with a 
             First Person point of view, like those seen in video games. Obviously, I do not have the expensive equipment to produce a high quality movie, but I thought:
@@ -124,35 +130,40 @@
     <div id="window_right"></div>
     <div id="white_bg"></div>
 
-    <div class="section_5">
-        <h1>Social Media & Credits</h1>
+    <div class="section_5" id="credits">
+        <h1>My Social Media & Credits</h1>
        
 
         <div id="instagram_icon">
             <a href="https://www.instagram.com/marcos_dho/" target="_blank">
-            <p>My Instagram Profile</p> 
+            <!-- <p>My Instagram Profile</p>  -->
             <img src="media\instagram_banner.jpg" alt="Icon of Instagram"></a>
         </div>
 
         <div id="github_icon">
             <a href="https://github.com/marcosnigp1" target="_blank">
-            <p>My Github Profile</p> 
+            <!-- <p>My Github Profile</p>  -->
             <img src="media\github_banner.png" alt="Icon of Instagram"></a>
         </div>
 
         <div id="youtube_icon">
             <a href="https://www.youtube.com/@marcosni_gp1" target="_blank">
-            <p>My YouTube Profile</p> 
+            <!-- <p>My YouTube Profile</p>  -->
             <img src="media\youtube_banner.png" alt="Icon of YouTube"></a>
         </div>
 
-        <div class="credits">
-            <p>Video in the background by Christopher Seufert on Youtube.</p>
-        </div>
+        <p>Video in the background by Christopher Seufert on Youtube.</p>
+
 
 
     </div>
 
 
 </body>
+
+<!-- Load JavaScript -->
+ <footer>
+    <script src="script.js"></script>
+ </footer>
+
 </html>
