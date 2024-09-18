@@ -581,17 +581,246 @@ video#bgVideo {
 
 /*End of written content */
 
-@media only screen and (max-width: 915px) {
+
+@media only screen and (max-width: 428px) {
+    /* First section */
 
     .menu h3{
         display:none;
     }
 
     .menu #menu_option{
-        font-size: 9px;
+        font-size: 9.5px;
+    }
+
+    .section_1{
+        height: 450px;
     }
 
     .section_1 p{
-      font-size: 5px;
+        position: relative;
+        bottom: 260px;
+        font-size: 9px;
     }
-  }
+
+    .section_1 h1{
+        font-size: 30px;
+    }
+
+    .videocontainer{
+        bottom: -85px;
+    }
+
+
+    /* Second section */
+
+    .section_2{
+        height: 400px;
+    }
+
+    .section_2 p{
+        position: relative;
+        font-size: 13px;
+    }
+
+    .section_2 h1{
+        position: relative;
+        font-size: 30px;
+    }
+
+    .photos #palms{
+        top: -40px;
+        left: 75%;
+        width: 20%;
+    }
+
+    /* Third section */
+
+    .section_3{
+        height: 640px;
+        overflow: hidden;
+    }
+
+    .container{
+        top: 150px;
+    }
+
+    .section img{
+        border-radius: 10px;
+        position: relative;
+        height: 70%;
+        width: 100%;
+    }
+
+    .pre, .nxt{
+        background: transparent;
+        z-index: 100;
+        cursor: pointer;
+        color: black;
+        font-size: 50px;
+        height: 10px;
+    }
+
+    .dots{
+        top: -60px;
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+        position: relative;
+        border-radius: 50%;
+        display: inline-block;
+        background: rgba(0,0,0,.4);
+    }
+
+    /* Fourth section */
+
+    .section_4{
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .section_4 p{
+        position: relative;
+        font-size: 12px;
+    }
+
+    .section_4 h1{
+        position: relative;
+        font-size: 30px;
+    }
+
+    #hardcoreimg img{
+        border-radius: 15px;
+        position: relative;
+        top: 78px;
+        left: 55%;
+        bottom: 25%;
+        width: 40%;
+        max-width: 400px;
+    }
+    
+    #threehardcoregif img{
+        border-radius: 15px;
+        position: relative;
+        top: 40px;
+        left: 51%;
+        width: 40%;
+        max-width: 500px;
+    }
+
+    /* Fifth section */
+
+    .section_5{
+        height: 600px;
+    }
+
+    .section_5 h1{
+        width: 80%;
+    }
+
+    .section_5 p{
+        border-radius: 20px;
+        color: black;
+        position: relative;
+        transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+        bottom: -55%;
+        left: 80%;
+        text-align: center;
+        width: 114%;
+        font-size: 8px;
+    }
+
+
+    #instagram_icon img{
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.274);
+        position: relative;
+        max-width: 50px;
+        float: left;
+        clear:right;
+        top: 165px;
+        left: 15%;
+        width: 10%;
+    }
+    
+    #instagram_icon p{
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.671);
+        position: relative;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 50%;
+        top: 260px;
+        left: 10%;
+        float: right;
+        font-size: 25px;
+    }
+    
+    #youtube_icon img{
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.274);
+        position: relative;
+        float: left;
+        max-width: 50px;
+        top: 50px;
+        left: -5%;
+        width: 10%;
+    }
+    
+    #youtube_icon p{
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.671);
+        position: relative;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 50%;
+        top: 166px;
+        left: 60%;
+        float: none;
+        font-size: 25px;
+    }
+
+
+    #github_icon img{
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.274);
+        position: relative;
+        float:left;
+        top: -60px;
+        left: 5%;
+        max-width: 50px;
+        width: 10%;
+}
+
+    #github_icon p{
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.671); 
+        position: relative;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 50%;
+        top: -85px;
+        left: 10%;
+        float: right;
+        font-size: 27px;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+
+    .section_1 h1{
+        font-size: 27px;
+    }
+
+    .section_1 p{
+        position: relative;
+        bottom: 225px;
+        font-size: 9px;
+    }
+
+    .menu #menu_option{
+        font-size: 8.3px;
+    }
+}
