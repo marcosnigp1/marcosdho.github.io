@@ -25,7 +25,6 @@ html, body{
     
     /* Found on: https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html */
     scroll-behavior: smooth;
-
 }
 
 
@@ -66,6 +65,7 @@ html, body{
     margin: 8px;
     margin-top: 3px;
     right: 3%;
+    cursor: pointer;
 }
 
 .menu #menu_option:hover{
@@ -79,6 +79,7 @@ html, body{
     left: 3%;
     font-size: 100%;
     top: 30%;
+    cursor: pointer;
 }
 
 
@@ -150,11 +151,16 @@ html, body{
 .section_1 p{
     position: absolute;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: -70px;
+    bottom: 72%;
     left: 50%;
+    background-color: rgba(0, 0, 0, 0.336);
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    top: 17%;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    width: 60%;
+    float: left;
+    clear: left;
 }
 
 video#bgVideo { 
@@ -472,7 +478,7 @@ video#bgVideo {
 
 .section_5{
     background-color: rgb(238, 238, 238);
-    height: 1000px;
+    height: 500px;
     overflow: hidden; /* Helps in hiding the borders that are left by the video and the transition to the other slide. */
 }
 
@@ -493,10 +499,10 @@ video#bgVideo {
     color: black;
     position: relative;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: -70%;
-    left: 50%;
+    bottom: -75%;
+    left: 76%;
     text-align: center;
-    width: 86%;
+    width: 120%;
     font-size: 20px;
 }
 
@@ -504,21 +510,24 @@ video#bgVideo {
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.274);
     position: relative;
-    float: right;
-    top: 125px;
-    right: 15%;
-    width: 15%;
+    max-width: 50px;
+    float: left;
+    clear:right;
+    top: 160px;
+    left: 35%;
+    width: 5%;
 }
 
 #instagram_icon p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.671);
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
-    width: 28%;
-    top: 750px;
-    left: 63%;
+    width: 32%;
+    top: 225px;
+    left: -11%;
+    float: right;
 }
 
 #youtube_icon img{
@@ -526,20 +535,22 @@ video#bgVideo {
     background-color: rgba(0, 0, 0, 0.274);
     position: relative;
     float: left;
-    top: 54px;
-    left: 15%;
-    width: 15%;
+    max-width: 50px;
+    top: 60px;
+    left: 27%;
+    width: 5%;
 }
 
 #youtube_icon p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.671);
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
-    width: 28%;
-    top: 678px;
-    left: 8%;
+    width: 29%;
+    top: 60px;
+    left: 13%;
+    float: right;
 }
 
 
@@ -547,21 +558,23 @@ video#bgVideo {
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.274);
     position: relative;
-    float:right;
-    top: 90px;
-    right: 27%;
-    width: 15%;
+    float:left;
+    top: -40px;
+    left: 32%;
+    max-width: 50px;
+    width: 5%;
 }
 
 #github_icon p{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.671); 
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
-    width: 28%;
-    top: 714px;
-    left: 36.5%;
+    width: 27%;
+    top: -36px;
+    left: -17%;
+    float: right;
 }
 
 /* END OF SECTION 5 */
@@ -569,3 +582,313 @@ video#bgVideo {
 
 
 /*End of written content */
+
+
+/* Responsive Design */
+
+@media only screen and (max-width: 810px) {
+
+
+    /* Section 1 */
+    .section_1 p{
+        position: relative;
+        bottom: 580px;
+        font-size: 12px;
+        width: 70%;
+    }
+
+    /* Section 2 */
+
+    .photos #me{
+        top: 180px;
+    }
+
+    .photos #palms{
+        top: -40px;
+        left: 75%;
+        width: 20%;
+    }
+
+    /* Section 4 */
+    #hardcoreimg img{
+        border-radius: 15px;
+        position: relative;
+        top: 78px;
+        left: 55%;
+        bottom: 25%;
+        width: 40%;
+        max-width: 400px;
+    }
+    
+    #threehardcoregif img{
+        border-radius: 15px;
+        position: relative;
+        top: 25px;
+        left: 51%;
+        width: 40%;
+        max-width: 500px;
+    }
+
+    /* Fifth section */
+    .section_5 p{
+        transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+        bottom: -69%;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    /* First section */
+
+    .menu h3{
+        display:none;
+    }
+
+    .menu #menu_option{
+        font-size: 9.5px;
+    }
+
+    .section_1{
+        height: 450px;
+    }
+
+    .section_1 p{
+        position: relative;
+        bottom: 260px;
+        font-size: 9px;
+    }
+
+    .section_1 h1{
+        font-size: 30px;
+    }
+
+    .videocontainer{
+        bottom: -85px;
+    }
+
+
+    /* Second section */
+
+    .section_2{
+        height: 400px;
+    }
+
+    .section_2 p{
+        position: relative;
+        font-size: 13px;
+    }
+
+    .section_2 h1{
+        position: relative;
+        font-size: 30px;
+    }
+
+    .photos #palms{
+        top: -40px;
+        left: 75%;
+        width: 20%;
+    }
+
+    /* Third section */
+
+    .section_3{
+        height: 640px;
+        overflow: hidden;
+    }
+
+    .container{
+        top: 150px;
+    }
+
+    .section img{
+        border-radius: 10px;
+        position: relative;
+        height: 70%;
+        width: 100%;
+    }
+
+    .pre, .nxt{
+        background: transparent;
+        z-index: 100;
+        cursor: pointer;
+        color: black;
+        font-size: 50px;
+        height: 10px;
+    }
+
+    .dots{
+        top: -60px;
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+        position: relative;
+        border-radius: 50%;
+        display: inline-block;
+        background: rgba(0,0,0,.4);
+    }
+
+    /* Fourth section */
+
+    .section_4{
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .section_4 p{
+        position: relative;
+        font-size: 12px;
+    }
+
+    .section_4 h1{
+        position: relative;
+        font-size: 30px;
+    }
+
+    #hardcoreimg img{
+        border-radius: 15px;
+        position: relative;
+        top: 78px;
+        left: 55%;
+        bottom: 25%;
+        width: 40%;
+        max-width: 400px;
+    }
+    
+    #threehardcoregif img{
+        border-radius: 15px;
+        position: relative;
+        top: 40px;
+        left: 51%;
+        width: 40%;
+        max-width: 500px;
+    }
+
+    /* Fifth section */
+
+    .section_5{
+        height: 600px;
+    }
+
+    .section_5 h1{
+        width: 80%;
+    }
+
+    .section_5 p{
+        border-radius: 20px;
+        color: black;
+        position: relative;
+        transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+        bottom: -55%;
+        left: 80%;
+        text-align: center;
+        width: 114%;
+        font-size: 8px;
+    }
+
+
+    #instagram_icon img{
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.274);
+        position: relative;
+        max-width: 50px;
+        float: left;
+        clear:right;
+        top: 165px;
+        left: 15%;
+        width: 10%;
+    }
+    
+    #instagram_icon p{
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.671);
+        position: relative;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 50%;
+        top: 260px;
+        left: 10%;
+        float: right;
+        font-size: 25px;
+    }
+    
+    #youtube_icon img{
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.274);
+        position: relative;
+        float: left;
+        max-width: 50px;
+        top: 50px;
+        left: -5%;
+        width: 10%;
+    }
+    
+    #youtube_icon p{
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.671);
+        position: relative;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 50%;
+        top: 166px;
+        left: 60%;
+        float: none;
+        font-size: 25px;
+    }
+
+
+    #github_icon img{
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.274);
+        position: relative;
+        float:left;
+        top: -60px;
+        left: 5%;
+        max-width: 50px;
+        width: 10%;
+}
+
+    #github_icon p{
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.671); 
+        position: relative;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 50%;
+        top: -85px;
+        left: 10%;
+        float: right;
+        font-size: 27px;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    /* First section */
+
+    .section_1 h1{
+        font-size: 27px;
+    }
+
+    .section_1 p{
+        position: relative;
+        bottom: 225px;
+        font-size: 9px;
+    }
+
+    .menu #menu_option{
+        font-size: 8.3px;
+        margin: 5px;
+    }
+
+    /* Second section */
+
+    .section_2 p{
+        position: relative;
+        font-size: 12px;
+    }
+
+    .section_4 p{
+        position: relative;
+        font-size: 12px;
+    }
+}
