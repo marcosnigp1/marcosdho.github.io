@@ -65,6 +65,7 @@ html, body{
     margin: 8px;
     margin-top: 3px;
     right: 3%;
+    cursor: pointer;
 }
 
 .menu #menu_option:hover{
@@ -78,6 +79,7 @@ html, body{
     left: 3%;
     font-size: 100%;
     top: 30%;
+    cursor: pointer;
 }
 
 
@@ -149,7 +151,7 @@ html, body{
 .section_1 p{
     position: absolute;
     transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
-    bottom: 65%;
+    bottom: 72%;
     left: 50%;
     background-color: rgba(0, 0, 0, 0.336);
     color: rgb(255, 255, 255);
@@ -535,7 +537,7 @@ video#bgVideo {
     float: left;
     max-width: 50px;
     top: 60px;
-    left: 25%;
+    left: 27%;
     width: 5%;
 }
 
@@ -558,7 +560,7 @@ video#bgVideo {
     position: relative;
     float:left;
     top: -40px;
-    left: 30%;
+    left: 32%;
     max-width: 50px;
     width: 5%;
 }
@@ -581,6 +583,58 @@ video#bgVideo {
 
 /*End of written content */
 
+
+/* Responsive Design */
+
+@media only screen and (max-width: 810px) {
+
+
+    /* Section 1 */
+    .section_1 p{
+        position: relative;
+        bottom: 580px;
+        font-size: 12px;
+        width: 70%;
+    }
+
+    /* Section 2 */
+
+    .photos #me{
+        top: 180px;
+    }
+
+    .photos #palms{
+        top: -40px;
+        left: 75%;
+        width: 20%;
+    }
+
+    /* Section 4 */
+    #hardcoreimg img{
+        border-radius: 15px;
+        position: relative;
+        top: 78px;
+        left: 55%;
+        bottom: 25%;
+        width: 40%;
+        max-width: 400px;
+    }
+    
+    #threehardcoregif img{
+        border-radius: 15px;
+        position: relative;
+        top: 25px;
+        left: 51%;
+        width: 40%;
+        max-width: 500px;
+    }
+
+    /* Fifth section */
+    .section_5 p{
+        transform: translateX(-50%); /* This helps a lot when centering Items, and also the percentages. */
+        bottom: -69%;
+    }
+}
 
 @media only screen and (max-width: 428px) {
     /* First section */
@@ -809,6 +863,7 @@ video#bgVideo {
 
 @media only screen and (max-width: 390px) {
 
+    /* First section */
 
     .section_1 h1{
         font-size: 27px;
@@ -822,5 +877,18 @@ video#bgVideo {
 
     .menu #menu_option{
         font-size: 8.3px;
+        margin: 5px;
+    }
+
+    /* Second section */
+
+    .section_2 p{
+        position: relative;
+        font-size: 12px;
+    }
+
+    .section_4 p{
+        position: relative;
+        font-size: 12px;
     }
 }
